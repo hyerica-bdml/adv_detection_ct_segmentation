@@ -8,6 +8,10 @@ In the context of medical imaging, the integration of deep learning with compute
 
 ## Methods
 
+<p align='center'>
+<img src='./figures/proposed_method.png" width="400">
+</p>
+
 <p align="center">
 <img src="./figures/method_diagram.png" width="300">
 </p>
