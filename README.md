@@ -7,6 +7,10 @@ In the context of medical imaging, the integration of deep learning with compute
 
 
 ## Methods
+<p align="center">
+<img src="./figures/method_diagram.png" width="300">
+</p>
+
 1. **Producing adversarial samples using the target model and a clean dataset:** In the beginning, we utilize the provided target model and clean dataset to create adversarial samples through a recognized attack technique. After generating these samples, they are partitioned into training and validation datasets based on subjects.
 
 2. **item Feature extraction from target model filters:** In the next step, we process the training and validation datasets through the target model, extracting features from each filter in its first layer. Essentially, these features will serve as the input to our classifier, capturing unique characteristics of each image. The features are important because they contain patterns that help to differentiate between legitimate and adversarial inputs.
@@ -17,7 +21,6 @@ In the context of medical imaging, the integration of deep learning with compute
 
 5. **Building the final adversarial attack detector:** Armed with the most discriminative filter identified in the previous step, we proceed to build the final adversarial attack detector. We train this detector using both the training and validation datasets. This comprehensive training allows the detector to generalize well to unseen data, effectively identifying adversarial attacks while minimizing false positives and negatives.
 
-<img src="./figures/method_diagram.png" width="200">
 
 ## Settings
 * TODO: PATH SETTINGS
@@ -34,8 +37,9 @@ python adv-classifier-optimization-sklearn.py --attack_name 'fgsm' --gpu 0 --eps
 ## Results
 We present a side-by-side comparison of PPV and sensitivity among various methods in the table below. As the nature of PPV and sensitivity, higher values for these metrics are preferable. A low PPV suggests that the method is prone to incorrectly labeling genuine samples as adversarial, while low sensitivity implies the method may fail to identify adversarial samples. As the table reveals, our approach outperforms all other methods in both PPV and sensitivity across every configuration. Notably, our method achieves a flawless PPV and sensitivity scores in all scenarios. 
 
+<p align="center">
 <img src="./figures/precision_recall.PNG" width="600">
-
+</p>
 
 ## Citation
 If you find this code useful for your research, please cite the paper:
