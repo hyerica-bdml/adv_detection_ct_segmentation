@@ -19,14 +19,17 @@ In the context of medical imaging, the integration of deep learning with compute
 
 <img src="./figures/method_diagram.png" width="400">
 
-## Installation
-* TODO
+## Settings
+* TODO: PATH SETTINGS
 * 
 ## Usage
-* TODO
+* For training attack detector using random forest against FGSM with eps 0.01, 
+```
+python adv-classifier-optimization-sklearn.py --attack_name 'fgsm' --gpu 0 --eps 0.01 --classifier 0
+```
 
 ## Dataset
-* TODO
+* This work utilizes "Multi-Atlas Labeling Beyond the Cranial Vault - Workshop and Challenge" (BTCV) which is publicly available at https://www.synapse.org/#!Synapse:syn3193805/wiki/217789
 
 ## Results
 We present a side-by-side comparison of PPV and sensitivity among various methods in the table below. As the nature of PPV and sensitivity, higher values for these metrics are preferable. A low PPV suggests that the method is prone to incorrectly labeling genuine samples as adversarial, while low sensitivity implies the method may fail to identify adversarial samples. As the table reveals, our approach outperforms all other methods in both PPV and sensitivity across every configuration. Notably, our method achieves a flawless PPV and sensitivity scores in all scenarios. 
