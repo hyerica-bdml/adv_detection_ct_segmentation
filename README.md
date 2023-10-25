@@ -17,7 +17,7 @@ In the context of medical imaging, the integration of deep learning with compute
 
 5. **Building the final adversarial attack detector:** Armed with the most discriminative filter identified in the previous step, we proceed to build the final adversarial attack detector. We train this detector using both the training and validation datasets. This comprehensive training allows the detector to generalize well to unseen data, effectively identifying adversarial attacks while minimizing false positives and negatives.
 
-![scheme](./figures/method_diagram.png)
+<img src="./figures/method_diagram.png" width="400">
 
 ## Installation
 * TODO
@@ -31,7 +31,8 @@ In the context of medical imaging, the integration of deep learning with compute
 ## Results
 We present a side-by-side comparison of PPV and sensitivity among various methods in the table below. As the nature of PPV and sensitivity, higher values for these metrics are preferable. A low PPV suggests that the method is prone to incorrectly labeling genuine samples as adversarial, while low sensitivity implies the method may fail to identify adversarial samples. As the table reveals, our approach outperforms all other methods in both PPV and sensitivity across every configuration. Notably, our method achieves a flawless PPV and sensitivity scores in all scenarios. 
 
-![precision_recall](./figures/precision_recall.png)
+<img src="./figures/precision_recall.PNG" width="600">
+
 
 ## Citation
 If you find this code useful for your research, please cite the paper:
