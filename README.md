@@ -17,7 +17,7 @@ In the context of medical imaging, the integration of deep learning with compute
 
 5. **Building the final adversarial attack detector:** Armed with the most discriminative filter identified in the previous step, we proceed to build the final adversarial attack detector. We train this detector using both the training and validation datasets. This comprehensive training allows the detector to generalize well to unseen data, effectively identifying adversarial attacks while minimizing false positives and negatives.
 
-<img src="./figures/method_diagram.png" width="400">
+<img src="./figures/method_diagram.png" width="200">
 
 ## Settings
 * TODO: PATH SETTINGS
