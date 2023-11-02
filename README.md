@@ -44,6 +44,11 @@ We present a side-by-side comparison of PPV and sensitivity among various method
 <img src="./figures/precision_recall.PNG" width="600">
 </p>
 
+For additional visual comparisons of features from the first layer between genuine and adversarial samples, showcasing the most and least sensitive filters, please visit the provided link! 
+
+https://github.com/hyerica-bdml/adv_detection_ct_segmentation/tree/master/figures/visualization
+
+
 ## Citation
 If you find this code useful for your research, please cite the paper:
 ```
