@@ -46,11 +46,9 @@ python adv-classifier-optimization-sklearn.py --attack_name 'fgsm' --gpu 0 --eps
 
 * We display some genuine samples alongside their adversarial versions as below. For additional visual comparisons of features from the first layer between genuine and adversarial samples, showcasing the most and least sensitive filters, please visit the provided link! (https://github.com/hyerica-bdml/adv_detection_ct_segmentation/tree/master/figures/visualization)
 
-<p align="center">
-<img src='./figures/visualization/fgsm/fgsm_0.01_None-113-2-22.png' width="300">
-<img src='./figures/visualization/bim/bim_0.01_5-10-21-0.png' width="300">
-<img src='./figures/visualization/smia/smia_0.01_5-4-2-22.png' width="300">
-</p>
+  * Visualization under FGSM attack <p align="center"><img src='./figures/visualization/fgsm/fgsm_0.01_None-113-2-22.png' width="400"></p>
+  * Visualization under BIM attack <p align="center"><img src='./figures/visualization/bim/bim_0.01_5-10-21-0.png' width="400"></p>
+  * Visualization under SMIA attack<p align="center"><img src='./figures/visualization/smia/smia_0.01_5-4-2-22.png' width="400"></p>
 
 
 ## Citation
