@@ -38,15 +38,19 @@ python adv-classifier-optimization-sklearn.py --attack_name 'fgsm' --gpu 0 --eps
 * This work utilizes "Multi-Atlas Labeling Beyond the Cranial Vault - Workshop and Challenge" (BTCV) which is publicly available at https://www.synapse.org/#!Synapse:syn3193805/wiki/217789
 
 ## Results
-We present a side-by-side comparison of PPV and sensitivity among various methods in the table below. As the nature of PPV and sensitivity, higher values for these metrics are preferable. A low PPV suggests that the method is prone to incorrectly labeling genuine samples as adversarial, while low sensitivity implies the method may fail to identify adversarial samples. As the table reveals, our approach outperforms all other methods in both PPV and sensitivity across every configuration. Notably, our method achieves a flawless PPV and sensitivity scores in all scenarios. 
+* We present a side-by-side comparison of PPV and sensitivity among various methods in the table below. As the nature of PPV and sensitivity, higher values for these metrics are preferable. A low PPV suggests that the method is prone to incorrectly labeling genuine samples as adversarial, while low sensitivity implies the method may fail to identify adversarial samples. As the table reveals, our approach outperforms all other methods in both PPV and sensitivity across every configuration. Notably, our method achieves a flawless PPV and sensitivity scores in all scenarios. 
 
 <p align="center">
 <img src="./figures/precision_recall.PNG" width="600">
 </p>
 
-For additional visual comparisons of features from the first layer between genuine and adversarial samples, showcasing the most and least sensitive filters, please visit the provided link! 
+* We display some genuine samples alongside their adversarial versions as below. For additional visual comparisons of features from the first layer between genuine and adversarial samples, showcasing the most and least sensitive filters, please visit the provided link! (https://github.com/hyerica-bdml/adv_detection_ct_segmentation/tree/master/figures/visualization)
 
-https://github.com/hyerica-bdml/adv_detection_ct_segmentation/tree/master/figures/visualization
+<p align="center">
+<img src='./figures/visualization/fgsm/fgsm_0.01_None-113-2-22.png' width="300">
+<img src='./figures/visualization/bim/bim_0.01_5-10-21-0.png' width="300">
+<img src='./figures/visualization/smia/smia_0.01_5-4-2-22.png' width="300">
+</p>
 
 
 ## Citation
