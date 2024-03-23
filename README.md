@@ -53,13 +53,14 @@ python adv-classifier-optimization-sklearn.py --attack_name 'fgsm' --gpu 0 --eps
 ## Citation
 If you find this code useful for your research, please cite the paper:
 ```
-@article{,
-  title={},
-  author={},
-  journal={},
-  volume={},
-  pages={},
-  year={},
-  publisher={}
+@article{lee2024enhancing,
+  title={Enhancing CT Segmentation Security against Adversarial Attack: Most Activated Filter Approach},
+  author={Lee, Woonghee and Kim, Younghoon},
+  journal={Applied Sciences},
+  volume={14},
+  number={5},
+  pages={2130},
+  year={2024},
+  publisher={Multidisciplinary Digital Publishing Institute}
 }
 ```
